@@ -1,4 +1,4 @@
-stage 'pre-checks'
+stage 'Pre-Checks'
 node('gljumper') {
    echo "Retrieve builds from gljumper"
    sh 'hostname'
@@ -44,7 +44,7 @@ parallel 'Extract windows': {
 //build 'Installer/ExtractImage_linux64'
 //build 'Installer/ExtractImage_freebsd64'
 
-stage 'Installer run'
+stage 'Installer make'
 node ('installer')
 {
    echo 'On windows'
