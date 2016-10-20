@@ -16,7 +16,7 @@ parallel 'getting image for win64': {
      node { build 'Installer/GetBuildImage_freebsd64' }
 },
 'Getting image for linux': {
-     node { build 'Installer/GetBuildImage_freebsd64' }
+     node { build 'Installer/GetBuildImage_linux64' }
 }
 
 
